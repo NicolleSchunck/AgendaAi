@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Barra de Vantagens</masterLabel>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+          <property
+        type="String"
+        name="advantageLink01"
+        label="Link da vantagem 01"
+      />
+              <property
+        type="ContentReference"
+        name="advantageImg01"
+        label="Imagem da vantagem 01"
+        filter="cms_image"
+      />
+              <property
+        type="String"
+        name="advantageText01"
+        label="Texto da vantagem 01"
+      />
+
+          <property
+        type="Boolean"
+        name="isActive01"
+        label="Ativar a vantagem 01"
+      />
+
+              <property
+        type="String"
+        name="advantageLink02"
+        label="Link da vantagem 02"
+      />
+              <property
+        type="ContentReference"
+        name="advantageImg02"
+        label="Imagem da vantagem 02"
+        filter="cms_image"
+      />
+              <property
+        type="String"
+        name="advantageText02"
+        label="Texto da vantagem 02"
+      />
+
+          <property
+        type="Boolean"
+        name="isActive02"
+        label="Ativar a vantagem 02"
+      />
+
+              <property
+        type="String"
+        name="advantageLink03"
+        label="Link da vantagem 03"
+      />
+              <property
+        type="ContentReference"
+        name="advantageImg03"
+        label="Imagem da vantagem 03"
+        filter="cms_image"
+      />
+              <property
+        type="String"
+        name="advantageText03"
+        label="Texto da vantagem 03"
+      />
+
+          <property
+        type="Boolean"
+        name="isActive03"
+        label="Ativar a vantagem 03"
+      />
+
+              <property
+        type="String"
+        name="advantageLink04"
+        label="Link da vantagem 04"
+      />
+              <property
+        type="ContentReference"
+        name="advantageImg04"
+        label="Imagem da vantagem 04"
+        filter="cms_image"
+      />
+              <property
+        type="String"
+        name="advantageText04"
+        label="Texto da vantagem 04"
+      />
+
+          <property
+        type="Boolean"
+        name="isActive04"
+        label="Ativar a vantagem 04"
+      />
+
+          <property
+        type="String"
+        name="advantageLink05"
+        label="Link da vantagem 05"
+      />
+            <property
+        type="ContentReference"
+        name="advantageImg05"
+        label="Imagem da vantagem 05"
+        filter="cms_image"
+      />
+            <property
+        type="String"
+        name="advantageText05"
+        label="Texto da vantagem 05"
+      />
+          
+          <property
+        type="Boolean"
+        name="isActive05"
+        label="Ativar a vantagem 05"
+      />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

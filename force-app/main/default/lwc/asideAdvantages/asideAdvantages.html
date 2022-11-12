@@ -1,0 +1,69 @@
+<!-- sldsValidatorIgnore -->
+<template>
+  <div class="aside_advantages">
+    <div class="container">
+      <template if:true={isActive01}>
+        <div class="advantage_item">
+          <div class="image">
+            <a href={advantageLink01} target="_blank">
+              <img src={advantageImgLink01} alt={advantageText01} />
+            </a>
+          </div>
+          <div class="text">{advantageText01}</div>
+        </div>
+      </template>
+      <template if:true={isActive02}>
+        <div class="advantage_separator">
+          <span></span>
+        </div>
+        <div class="advantage_item">
+          <div class="image">
+            <a href={advantageLink02} target="_blank">
+              <img src={advantageImgLink02} alt={advantageText02} />
+            </a>
+          </div>
+          <div class="text">{advantageText02}</div>
+        </div>
+      </template>
+      <template if:true={isActive03}>
+        <div class="advantage_separator">
+          <span></span>
+        </div>
+        <div class="advantage_item">
+          <div class="image">
+            <a href={advantageLink03} target="_blank">
+              <img src={advantageImgLink03} alt={advantageText03} />
+            </a>
+          </div>
+          <div class="text">{advantageText03}</div>
+        </div>
+      </template>
+      <template if:true={isActive04}>
+        <div class="advantage_separator">
+          <span></span>
+        </div>
+        <div class="advantage_item">
+          <div class="image">
+            <a href={advantageLink04} target="_blank">
+              <img src={advantageImgLink04} alt={advantageText04} />
+            </a>
+          </div>
+          <div class="text">{advantageText04}</div>
+        </div>
+      </template>
+      <template if:true={isActive05}>
+        <div class="advantage_separator">
+          <span></span>
+        </div>
+        <div class="advantage_item">
+          <div class="image">
+            <a href={advantageLink05} target="_blank">
+              <img src={advantageImgLink05} alt={advantageText05} />
+            </a>
+          </div>
+          <div class="text">{advantageText05}</div>
+        </div>
+      </template>
+    </div>
+  </div>
+</template>

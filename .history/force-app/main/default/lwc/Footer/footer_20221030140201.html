@@ -1,0 +1,120 @@
+<template>
+  <footer>
+    <template if:true={chatVisible}>
+      <div class="chat_whatsapp_fixed">
+        <a class="outter-wrapper" onclick={openChat}>
+            <img src={svgChatUrl} alt="Chat" />
+        </a>
+        <a href={whatsappUrl} target="_blank">
+            <img src={svgWhatsAppUrl} alt="WhatsApp"/>
+        </a>
+      </div>
+    </template>
+    
+    <div class="container accordion_wrapper">
+      <div class="logo_footer">
+        <a href="/">
+          <img src={svgLogoFooterURL} alt="Logo Footer" />
+        </a>
+      </div>
+      <div class="atendimento accordion_item open">
+        <h3 class="accordion_item_heading">Informações</h3>
+
+        <div class="accordion_item_content">
+          <ul>
+            <li class="phone"><a href={phoneUrl}>{phone}</a></li>
+            <li class="whatsapp">
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                >{whatsApp}</a
+              >
+            </li>
+            <li>Sobre Nós</li>
+            <li><a href="mailto:relacionamento@agendAí.com.br">{email}</a></li>
+          </ul>
+
+          <h4>Horário de Atendimento</h4>
+          <p>{linkBillet}</p> <!-- DIAS DE ATENDIMENTO DA SEMANA -->
+          <p class="center">{officeHours}</p> <!-- HORÁRIOS DE ATENDIMENTO -->
+        </div>
+      </div>
+      <div class="info accordion_item open">
+        <h3 class="accordion_item_heading">Informações Úteis</h3>
+        <div class="accordion_item_content">
+          <ul>
+            <li><a href={linkInstitutional01}>Acontece na Fatec</a></li>
+            <li>
+              <a href={linkInstitutional02}
+                >ARINTER</a
+              >
+            </li>
+            <li><a href={linkInstitutional03}>Secretária</a></li>
+            <li><a href={linkInstitutional04}>Matrícula e Rematrícula</a></li>
+            <!--</li>
+          <li><a href={linkInstitutional09}>Campanha</a></li>-->
+          </ul>
+        </div>
+      </div>
+      <div class="institutional accordion_item open">
+        <h3 class="accordion_item_heading">Cursos</h3>
+        <div class="accordion_item_content">
+          <ul>
+            <li><a href={linkInstitutional05}>Anáslise de Desenvolvimento de sistemas</a></li>
+            <li>
+              <a href={linkInstitutional06}
+                >Logística</a
+              >
+            </li>
+            <li>
+              <a href={linkInstitutional07}>Desenvolvimento de Software Multiplataforma</a>
+            </li>
+            <li>
+              <a href={linkInstitutional08}
+                >Gestão Empresarial</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="social_and_language">
+        <div class="social">
+          <h3>Redes Sociais</h3>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank"
+                ><img src={svgFacebookURL} alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><img src={svgInstagramURL} alt="Instagram"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                ><img src={svgYoutubeURL} alt="Youtube"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="language">
+          <h3>Idioma</h3>
+          <select name="language" onchange={handleChange}>
+            <option value="pt_BR" selected={isportuguese}>Português</option>
+            <option value="en_US" selected={isenglish}>Inglês</option>
+            <option value="es" selected={isspanish}>Espanhol</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="container">
+        <p>
+          AgendAí - Todos os direitos reservados
+        </p>
+      </div>
+    </div>
+  </footer>
+</template>

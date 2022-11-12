@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Rodapé</masterLabel>
+    <targets>
+        <target>lightning__AppPage</target> 
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightning__Tab</target>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__AppPage, lightning__RecordPage, lightning__HomePage, lightningCommunity__Default">
+          <property 
+            type="String" 
+            name="phone" 
+            label="Telefone"
+          />
+          <property 
+            type="String" 
+            name="whatsApp" 
+            label="WhatsApp (Sem 55)" 
+          />
+          <property 
+            type="String" 
+            name="email" 
+            label="E-mail" 
+          />
+          <property
+            type="String"
+            name="linkBillet"
+            label="Dias de Atendimento da Semana"
+          />
+          <property
+            type="String"
+            name="officeHours"
+            label="Horário de Atendimento"
+          />
+          <property
+            type="String"
+            name="linkInstitutional01"
+            label="Acontece na Fatec"
+          />
+          <property
+            type="String"
+            name="linkInstitutional02"
+            label="ARINTER"
+          />
+          <property
+            type="String"
+            name="linkInstitutional03"
+            label="Secretária"
+          />
+          <property
+            type="String"
+            name="linkInstitutional04"
+            label="Matrícula e Rematrícula"
+          />
+          <property
+            type="String"
+            name="linkInstitutional05"
+            label="Página de Anáslise de Desenvolvimento de sistemas"
+          />
+          <property
+            type="String"
+            name="linkInstitutional06"
+            label="Página de Logística"
+          />
+          <property
+            type="String"
+            name="linkInstitutional07"
+            label="Página de Desenvolvimento de Software Multiplataforma"
+          />
+          <property
+            type="String"
+            name="linkInstitutional08"
+            label="Página de Gestão Empresarial"
+          />
+          <property
+            type="String"
+            name="linkInstitutional09"
+            label="Página Sobre Nós"
+          />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

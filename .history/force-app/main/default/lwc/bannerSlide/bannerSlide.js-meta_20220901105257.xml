@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <isExposed>true</isExposed>
+    
+    <masterLabel>Banner Slide Pricipal O</masterLabel>
+
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <!-- Temporizador -->
+            <property
+                name="timer" 
+                type="Integer"
+                label="Temporizor do slider (em segundos)"
+                description="Escolha a quantidade de tempo para a troca de slides automática."
+                default="5"
+            />
+            <!--Slider 1-->
+            <property name="slider1" label="SLIDE 1" type="String" datasource="ATIVO,INATIVO" default="ATIVO"/>
+            <property name="position1" label="Selecione a posição do Slide (APENAS 1 PARA CADA SLIDE)" type="String" datasource="1,2,3,4,5" default="1"/>
+            <property name="desktopImg1" label="Imagem para Desktop" type="ContentReference" filter="cms_image"/>
+            <property name="mobileImg1" label="Imagem para Mobile" type="ContentReference" filter="cms_image"/>
+            <property name="slideLink1" label="Link da campanha" type="String"/>
+            <property name="startDate1" label="Data de início mm/dd/aaaa" type="String"/>
+            <property name="endDate1" label="Data de fim mm/dd/aaaa" type="String"/>
+            <!--Slider 2-->
+            <property name="slider2" label="SLIDE 2" type="String" datasource="ATIVO,INATIVO" default="ATIVO"/>
+            <property name="position2" label="Selecione a posição do Slide (APENAS 1 PARA CADA SLIDE)" type="String" datasource="1,2,3,4,5" default="2"/>
+            <property name="desktopImg2" label="Imagem para Desktop" type="ContentReference" filter="cms_image"/>
+            <property name="mobileImg2" label="Imagem para Mobile" type="ContentReference" filter="cms_image"/>
+            <property name="slideLink2" label="Link da campanha" type="String"/>
+            <property name="startDate2" label="Data de início mm/dd/aaaa" type="String"/>
+            <property name="endDate2" label="Data de fim mm/dd/aaaa" type="String"/>
+            <!--Slider 3-->
+            <property name="slider3" label="SLIDE 3" type="String" datasource="ATIVO,INATIVO" default="ATIVO"/>
+            <property name="position3" label="Selecione a posição do Slide (APENAS 1 PARA CADA SLIDE)" type="String" datasource="1,2,3,4,5" default="3"/>
+            <property name="desktopImg3" label="Imagem para Desktop" type="ContentReference" filter="cms_image"/>
+            <property name="mobileImg3" label="Imagem para Mobile" type="ContentReference" filter="cms_image"/>
+            <property name="slideLink3" label="Link da campanha" type="String"/>
+            <property name="startDate3" label="Data de início mm/dd/aaaa" type="String"/>
+            <property name="endDate3" label="Data de fim mm/dd/aaaa" type="String"/>
+            <!--Slider 4-->
+            <property name="slider4" label="SLIDE 4" type="String" datasource="ATIVO,INATIVO" default="ATIVO"/>
+            <property name="position4" label="Selecione a posição do Slide (APENAS 1 PARA CADA SLIDE)" type="String" datasource="1,2,3,4,5" default="4"/>
+            <property name="desktopImg4" label="Imagem para Desktop" type="ContentReference" filter="cms_image"/>
+            <property name="mobileImg4" label="Imagem para Mobile" type="ContentReference" filter="cms_image"/>
+            <property name="slideLink4" label="Link da campanha" type="String"/>
+            <property name="startDate4" label="Data de início mm/dd/aaaa" type="String"/>
+            <property name="endDate4" label="Data de fim mm/dd/aaaa" type="String"/>
+            <!--Slider 5-->
+            <property name="slider5" label="SLIDE 5" type="String" datasource="ATIVO,INATIVO" default="ATIVO"/>
+            <property name="position5" label="Selecione a posição do Slide (APENAS 1 PARA CADA SLIDE)" type="String" datasource="1,2,3,4,5" default="5"/>
+            <property name="desktopImg5" label="Imagem para Desktop" type="ContentReference" filter="cms_image"/>
+            <property name="mobileImg5" label="Imagem para Mobile" type="ContentReference" filter="cms_image"/>
+            <property name="slideLink5" label="Link da campanha" type="String"/>
+            <property name="startDate5" label="Data de início mm/dd/aaaa" type="String"/>
+            <property name="endDate5" label="Data de fim mm/dd/aaaa" type="String"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

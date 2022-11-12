@@ -1,0 +1,83 @@
+
+<template>
+    <!--Config Desktop-->
+    <div class="slds-grid slds-grid_align-center" if:true={isDesktop}>
+        <section class="carousel" aria-label="Gallery">
+            <ol class="carousel__viewport">
+                <li id="carousel__slideDesktop" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                        <button class="prevSlide" onclick={prevSlide}></button>
+                        <button class="nextSlide" onclick={nextSlide}></button>
+                        <a href={slideLink}><img src={desktopImg}/></a>
+                    </div>
+                </li>
+            </ol>
+            <aside class="carousel__navigation">
+                <template for:each={images} for:item="item" for:index="index">
+                    <li key={item.desktopImg} class="carousel__navigation-item">
+                        <template if:true={item.isActive}>
+                            <a onclick={getDotImage} data-dados = {item} data-imageindex = {index} class="carousel__navigation-button_dot_active"></a>
+                        </template>
+                        <template if:false={item.isActive}>
+                            <a onclick={getDotImage} data-dados = {item} data-imageindex = {index} class="carousel__navigation-button"></a>
+                        </template>
+                    </li>
+                </template>
+            </aside>
+        </section>
+    </div>
+
+    <!--Config Tablet-->
+    <div class="slds-grid slds-grid_align-center" if:true={isTablet}>
+        <section class="carousel" aria-label="Gallery">
+            <ol class="carousel__viewport">
+                <li id="carousel__slideTablet" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                        <button class="prevSlide" onclick={prevSlide}></button>
+                        <button class="nextSlide" onclick={nextSlide}></button>
+                        <a href={slideLink}><img src={desktopImg}/></a>
+                    </div>
+                </li>
+            </ol>
+            <aside class="carousel__navigation">
+                <template for:each={images} for:item="item" for:index="index">
+                    <li key={item.desktopImg} class="carousel__navigation-item">
+                        <template if:true={item.isActive}>
+                            <a onclick={getDotImage} data-dados = {item} data-imageindex = {index} class="carousel__navigation-button_dot_active"></a>
+                        </template>
+                        <template if:false={item.isActive}>
+                            <a onclick={getDotImage} data-dados = {item} data-imageindex = {index} class="carousel__navigation-button"></a>
+                        </template>
+                    </li>
+                </template>
+            </aside>
+        </section>
+    </div>
+
+    <!--Config Mobile-->
+    <div class="slds-grid slds-grid_align-center" if:true={isMobile}>
+        <section class="carousel" aria-label="Gallery">
+            <ol class="carousel__viewport">
+                <li id="carousel__slideMobile" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                        <button class="prevSlide" onclick={prevSlide}></button>
+                        <button class="nextSlide" onclick={nextSlide} style="margin-left: 90%;"></button>
+                        <a href={slideLink}><img src={mobileImg}/></a>
+                    </div>
+                </li>
+            </ol>
+            <aside class="carousel__navigation">
+                <template for:each={images} for:item="item" for:index="index">
+                    <li key={item.mobileImg} class="carousel__navigation-item">
+                        <template if:true={item.isActive}>
+                            <a onclick={getDotImage} data-dados = {item} data-imageindex = {index} class="carousel__navigation-button_dot_active"></a>
+                        </template>
+                        <template if:false={item.isActive}>
+                            <a onclick={getDotImage} data-dados = {item} data-imageindex = {index} class="carousel__navigation-button"></a>
+                        </template>
+                    </li>
+                </template>
+            </aside>
+        </section>
+    </div>
+</template>
